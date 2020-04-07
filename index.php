@@ -9,6 +9,7 @@
 
 <body>
     <?php
+    phpinfo();
 
     include('connect.php');
 
