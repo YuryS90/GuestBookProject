@@ -9,11 +9,8 @@
 
 <body>
     <?php
-   
 
     include('connect.php');
-
-
 
     $result = $mysqli->query('SELECT * FROM `fk5`');
 
