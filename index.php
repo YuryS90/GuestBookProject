@@ -9,12 +9,13 @@
 
 <body>
     <?php
+   
 
     include('connect.php');
 
 
 
-    $result = $mysqli->query('SELECT * FROM `table`');
+    $result = $mysqli->query('SELECT * FROM `fk5`');
 
     while ($row = $result->fetch_object()) {
         echo "<b>$row->Text</b><i>$row->Name</i><br>";

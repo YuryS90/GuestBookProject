@@ -5,7 +5,7 @@ include('connect.php');
 if (!empty($_POST['text'] && !empty($_POST['name']))) {
     mysqli_query(
         $mysqli,
-        "INSERT INTO `table` VALUES(NULL, '$_POST[text]', '$_POST[name]')"
+        "INSERT INTO `fk5` VALUES(NULL, '$_POST[text]', '$_POST[name]')"
     );
 };
 
