@@ -14,7 +14,6 @@ if (!(isset($_SESSION['bantime']) && ($_SESSION['bantime'] > time()))) {
         $_SESSION['bantime'] = time() + 15;
     }
 }
-
 $mysqli->close();
 
-header('Location: index.php');
+header('location: index.php');
