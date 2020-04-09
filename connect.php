@@ -8,7 +8,7 @@
 
 $mysqli = new mysqli(
     $host,
-    $userName,
+    $user,
     $password,
     $database
 );
