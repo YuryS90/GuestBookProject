@@ -13,7 +13,7 @@ session_start();
 <?php
 include("config.php");
 include("connect.php");
-include("function.php");
+include("funb.php");
 
 
 if (isset($_SESSION['bantime']) && ($_SESSION['bantime'] > time())) {
