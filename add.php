@@ -1,14 +1,19 @@
 <?php
+session_start();
 
-include("config.php");
+include('funb.php');
+include('config.php');
 include('connect.php');
 
-if (!empty($_POST['text'] && !empty($_POST['name']))) {
-    mysqli_query(
-        $mysqli,
-        "INSERT INTO `fk5` VALUES(NULL, '$_POST[text]', '$_POST[name]')"
-    );
-};
+if (!(isset($_SESSION['bantime']) && ($_SESSION['bantime'] > time()))) {
+    if (censor($_POST['text'])) {
+        $mysqli->query(
+            "INSERT INTO `fk5` VALUE (NULL,'$_POST[text]', '$_POST[name]')"
+        );
+    } else {
+        $_SESSION['bantime'] = time() + 15;
+    }
+}
 
 $mysqli->close();
 

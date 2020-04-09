@@ -7,8 +7,8 @@
 //   Port: 3306
 
 $mysqli = new mysqli(
-    'remotemysql.com',
-    'fk5gNJOjoi',
-    'bacElk3OeN',
-    'fk5gNJOjoi'
+    $host,
+    $userName,
+    $password,
+    $database
 );

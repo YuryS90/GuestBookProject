@@ -1,0 +1,12 @@
+img {
+    width: 1rem;
+}
+
+.pagenation a {
+    color: green;
+}
+
+.selectedpage {
+    font-weight: bold;
+    color: blue !important;
+}
