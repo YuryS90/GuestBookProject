@@ -1,13 +1,11 @@
-body {
-    background-color: rgb(255, 194, 194);
-}
-
 img {
     width: 1rem;
 }
 
 .pagenation a {
     color: green;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 .selectedpage {
