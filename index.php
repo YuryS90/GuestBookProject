@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guest Book</title>
     <link href='style.css' rel='stylesheet'>
 </head>
 <?php
@@ -50,12 +50,13 @@ echo $pagenation;
 echo "<table border='1'>\n";
 while ($row = $result->fetch_object()) {
     echo "<tr>";
-    echo "<td>" . smile($row->Text) . "</td>";
+    echo "<td>" . bbCode(smile($row->Text)) . "</td>";
     echo "<td>" . $row->Name . "</td>";
     echo "</tr>";
 }
 echo "</table>\n";
 echo $pagenation;
+
 $result->free();
 
 $mysqli->close();

@@ -1,14 +1,25 @@
+body {
+    background-color: antiquewhite;
+}
 img {
     width: 1rem;
 }
 
+/* .pagenation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
 .pagenation a {
+   
     color: green;
     margin-left: 10px;
     text-decoration: none;
 }
 
 .selectedpage {
+    
     font-weight: bold;
     color: blue !important;
 }

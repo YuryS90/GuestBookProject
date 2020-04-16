@@ -5,7 +5,8 @@
 //   Server: remotemysql.com
 //   Port: 3306
 
-$pagesize = 3;
+$pagesize = 3; // размер страницы
+
 $host = "remotemysql.com";
 $user = "fk5gNJOjoi";
 $password = "bacElk3OeN";
