@@ -17,10 +17,13 @@ include("funb.php");
 
 if (!isset($_SESSION['col'])) {
     $_SESSION['col'] = 1;
+    
 }
 echo  "Количество посещений: " . $_SESSION['col']++;
 
+
 echo "<br>";
+
 
 if (!isset($_SESSION['time'])) {
     $_SESSION['time'] = time();
@@ -29,6 +32,7 @@ $time = mktime(0, 0, (time() - $_SESSION['time']));
 echo  "Вы находитесь на сайте:" . date('H:i:s', $time);
 
 echo "<br>";
+
 
 if (isset($_SESSION['bantime']) && ($_SESSION['bantime'] > time())) {
     echo "Вы забанины на: " . ($_SESSION['bantime'] - time()) . " c";
